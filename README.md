@@ -9,7 +9,7 @@ Ten projekt agreguje 6 niezależnych aplikacji (Library, Shop, Movies, Kanban, N
 
 ## Uruchomienie
 - **Klon REPO** — `git clone https://github.com/psaks350/TechnologieInternetowe_FastAPI.git`
-- **Wejdź do katalogu projektu:** — `cd `
+- **Wejdź do katalogu projektu:** — `cd TechnologieInternetowe_FastAPI`
 - **Będąc w głównym katalogu, uruchom wszystkie projekty z przebudowaniem obrazów:** — `docker compose up --build`
 
 ## Dostęp do aplikacji
