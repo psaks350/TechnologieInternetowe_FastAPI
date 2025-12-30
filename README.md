@@ -27,4 +27,4 @@ Ten projekt agreguje 6 niezależnych aplikacji (Library, Shop, Movies, Kanban, N
 | **Lab 06: Notes** | [http://localhost:8085](http://localhost:8085) | [http://localhost:8005/docs](http://localhost:8005/docs) |
 
 ## Zatrzymywanie i czyszczenie
-- **Aby zatrzymać wszystkie serwisy:** — `docker compose down`
+- **Aby zatrzymać wszystkie serwisy:** — w terminalu: `CTRL+C` oraz `docker compose down`
