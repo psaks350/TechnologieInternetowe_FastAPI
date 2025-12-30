@@ -13,6 +13,7 @@ docker compose up --build
 
 ### Dostęp do aplikacji
 
-Serwis	        Adres URL	                  Opis
-Frontend	    http://localhost:8082	      Interfejs graficzny użytkownika (HTML/JS)
-Backend API	    http://localhost:8002/docs	  Dokumentacja Swagger UI
+| Serwis | Adres URL | Opis |
+| :--- | :--- | :--- |
+| **Frontend** | [http://localhost:8082](http://localhost:8082) | Interfejs graficzny użytkownika (HTML/JS) |
+| **Backend API** | [http://localhost:8002/docs](http://localhost:8002/docs) | Dokumentacja Swagger UI |
