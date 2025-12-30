@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  library-api:
+    build: ./backend
+    container_name: library-api
+    env_file:
+      - .env
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./backend:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+  
+  library-web:
+    image: nginx:alpine
+    container_name: library-web
+    ports:
+      - "8080:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html

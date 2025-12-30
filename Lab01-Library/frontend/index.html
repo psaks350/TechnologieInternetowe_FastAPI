@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wypożyczalnia książek</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>System Biblioteczny</h1>
+    <div id="message"></div>
+
+    <section>
+        <h2>Dodaj Dane</h2>
+        
+        <form onsubmit="addMember(event)">
+            <input id="m_name" placeholder="Imię czytelnika" required>
+            <input id="m_email" type="email" placeholder="Email" required>
+            <button>Dodaj Czytelnika</button>
+        </form>
+        
+        <hr>
+
+        <form onsubmit="addBook(event)">
+            <input id="b_title" placeholder="Tytuł książki" required>
+            <input id="b_author" placeholder="Autor" required>
+            <input id="b_copies" type="number" value="1" min="1" placeholder="Ilość" style="width: 60px" required>
+            <button>Dodaj Książkę</button>
+        </form>
+    </section>
+
+    <section>
+        <h2>Lista Czytelników</h2>
+        <button onclick="loadAll()" style="font-size: 0.8em;">Odśwież</button>
+        <div id="membersList" style="margin-top: 10px;">Ładowanie czytelników...</div>
+
+
+    </section>
+
+    <section>
+        <h2>Wypożyczalnia</h2>
+        <div>
+            <label>Kto wypożycza:</label>
+            <select id="memberSelect"><option value="">Ładowanie...</option></select>
+        </div>
+        <br>
+        <div id="booksList">Ładowanie książek...</div>
+    </section>
+
+    <section>
+        <h2>Aktywne Wypożyczenia</h2>
+        <button onclick="loadAll()" style="font-size: 0.8em;">Odśwież</button>
+        <div id="loansList" style="margin-top: 10px;">Ładowanie...</div>
+    </section>
+
+    <section>
+        <h2>Wszystkie Wypożyczenia</h2>
+        <button onclick="loadAll()" style="font-size: 0.8em;">Odśwież</button>
+        <div id="allLoansList" style="margin-top: 10px;">Ładowanie...</div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

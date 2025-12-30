@@ -1,0 +1,20 @@
+version: '3.8'
+
+services:
+  kanban-api:
+    build: ./backend
+    container_name: kanban-api
+    env_file: .env
+    ports:
+      - "8004:8000"
+    volumes:
+      - ./backend:/app
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+
+  kanban-web:
+    image: nginx:alpine
+    container_name: kanban-web
+    ports:
+      - "8084:80"
+    volumes:
+      - ./frontend:/usr/share/nginx/html

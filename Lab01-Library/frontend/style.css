@@ -1,0 +1,9 @@
+body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; line-height: 1.6; }
+section { border: 1px solid #ccc; padding: 15px; margin-bottom: 20px; border-radius: 5px; }
+h2 { margin-top: 0; border-bottom: 1px solid #eee; padding-bottom: 5px; }
+.row { display: flex; justify-content: space-between; padding: 5px 0; border-bottom: 1px dotted #ccc; }
+button { cursor: pointer; padding: 5px 10px; }
+input, select { padding: 5px; margin: 5px 0; }
+.error { color: red; font-weight: bold; }
+.success { color: green; font-weight: bold; }
+small { color: #666; }

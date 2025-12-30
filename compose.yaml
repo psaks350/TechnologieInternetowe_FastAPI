@@ -1,0 +1,30 @@
+include:
+  # Projekt 1
+  - path: Lab01-Library/docker-compose.yml
+    env_file: Lab01-Library/.env
+    project_directory: Lab01-Library
+
+  # Projekt 2
+  - path: Lab02-Shop/docker-compose.yml
+    env_file: Lab02-Shop/.env
+    project_directory: Lab02-Shop
+
+  # Projekt 3
+  - path: Lab03-Blog/docker-compose.yml
+    env_file: Lab03-Blog/.env
+    project_directory: Lab03-Blog
+
+  # Projekt 4
+  - path: Lab04-Movies/docker-compose.yml
+    env_file: Lab04-Movies/.env
+    project_directory: Lab04-Movies
+
+  # Projekt 5
+  - path: Lab05-Kanban/docker-compose.yml
+    env_file: Lab05-Kanban/.env
+    project_directory: Lab05-Kanban
+
+  # Projekt 6
+  - path: Lab06-Notes/docker-compose.yml
+    env_file: Lab06-Notes/.env
+    project_directory: Lab06-Notes

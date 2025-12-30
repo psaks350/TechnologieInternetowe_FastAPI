@@ -1,0 +1,64 @@
+body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+.add-panel {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.movie-card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.movie-info h2 {
+    margin: 0 0 5px 0;
+    font-size: 1.2em;
+}
+
+.right-section {
+    text-align: right;
+}
+
+.score {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #007bff; 
+}
+
+.vote-btn {
+    margin-left: 2px;
+    font-size: 0.8em;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    display: none;
+}

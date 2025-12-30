@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Proste Notatki</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Notatki & Tagi</h1>
+    
+    <input type="text" id="searchInput" placeholder="Szukaj (wpisz tytuł lub treść)..." onkeyup="searchNotes()">
+
+    <div class="add-panel">
+        <strong>Nowa notatka:</strong>
+        <input id="newTitle" placeholder="Tytuł">
+        <textarea id="newBody" placeholder="Treść notatki..."></textarea>
+        <input id="newTags" placeholder="Tagi (oddzielone przecinkiem): praca, dom">
+        <button onclick="addNote()">Dodaj</button>
+    </div>
+
+    <div id="notesList">Ładowanie...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

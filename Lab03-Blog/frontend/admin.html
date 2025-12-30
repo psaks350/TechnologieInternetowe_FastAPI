@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Panel Admina</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Strona Główna</a>
+        <a href="admin.html">Panel Moderatora</a>
+    </nav>
+
+    <h1>Dodaj Nowy Post</h1>
+    <div class="form-box">
+        <input id="new-title" type="text" placeholder="Tytuł posta...">
+        <textarea id="new-body" rows="4" placeholder="Treść wpisu..."></textarea>
+        <button onclick="createNewPost()">Opublikuj Post</button>
+    </div>
+
+    <h1>Kolejka Moderacji</h1>
+    <p style="color: #666;">Poniższe komentarze czekają na zatwierdzenie.</p>
+    
+    <div id="pending-container">Ładowanie...</div>
+
+    <script src="script.js"></script>
+    <script>
+        loadAdminView();
+    </script>
+</body>
+</html>

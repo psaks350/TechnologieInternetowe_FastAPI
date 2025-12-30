@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Sklep</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="msg" style="display:none; position:fixed; top:0; right:0; background:black; color:white; padding:10px;"></div>
+
+<h1>Prosty Sklep API</h1>
+
+<div class="grid-container">
+
+    <div class="column">
+        <h2>Produkty</h2>
+        <div class="inner-padding">
+            
+            <div style="border: 1px dashed gray; padding: 10px; margin-bottom: 15px;">
+                <strong>Dodaj produkt:</strong>
+                <input id="new_name" placeholder="Nazwa">
+                <input id="new_price" type="number" placeholder="Cena">
+                <button onclick="addProduct()">Dodaj</button>
+            </div>
+
+            <div style="border: 1px dashed gray; padding: 10px; margin-bottom: 15px;">
+                <strong>Kreator kuponów:</strong>
+                <input id="c_code" placeholder="Kod">
+                <input id="c_percent" type="number" placeholder="%">
+                <button onclick="createCoupon()">Utwórz</button>
+            </div>
+
+            <hr>
+            <div id="productList">Ładowanie...</div>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>Koszyk</h2>
+        <div class="inner-padding">
+            <div id="cartList">Pusty</div>
+
+            <div style="margin-top: 20px; background: #f9f9f9; padding: 10px; border: 1px solid #eee;">
+                Kupon rabatowy:
+                <input id="couponInput" placeholder="Wpisz kod..." style="margin-bottom:5px;">
+                <button onclick="applyCoupon()">Zastosuj kod</button>
+                
+                <div id="discountMsg" class="msg-success" style="display:none;"></div>
+                <div id="errorMsg" class="msg-error" style="display:none;"></div>
+            </div>
+
+            <div class="summary-box">
+                <div>Suma: <span id="cartSubtotal">0.00</span> PLN</div>
+                <div style="color:green">Rabat: -<span id="cartDiscount">0.00</span> PLN</div>
+                <div style="font-weight: bold; margin-top: 5px;">
+                    DO ZAPŁATY: <span id="cartFinalTotal">0.00</span> PLN
+                </div>
+            </div>
+
+            <button class="checkout" onclick="checkout()">ZAPŁAĆ</button>
+        </div>
+    </div>
+
+    <div class="column">
+        <h2>Historia</h2>
+        <div class="inner-padding">
+            <button onclick="loadOrders()">Odśwież</button>
+            <div id="orderList" style="margin-top: 10px;">Brak zamówień</div>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

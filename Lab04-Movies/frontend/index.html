@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking Filmów</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <h1>Ranking Filmów</h1>
+    <div id="error-msg" class="error"></div>
+
+    <div class="add-panel">
+        <input id="newTitle" placeholder="Tytuł filmu" required>
+        <input id="newYear" type="number" placeholder="Rok" style="width: 80px;" required>
+        <button onclick="addMovie()">Dodaj</button>
+    </div>
+
+    <div id="moviesList">Ładowanie...</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

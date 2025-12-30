@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Wyszukiwarka na górze */
+#searchInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid black; /* Gruba ramka dla wyróżnienia */
+    box-sizing: border-box;
+    font-size: 1.1em;
+}
+
+/* Panel dodawania */
+.add-panel {
+    border: 1px solid black;
+    padding: 15px;
+    margin-bottom: 30px;
+    background-color: #f9f9f9;
+}
+
+.add-panel input, 
+.add-panel textarea {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #888;
+    box-sizing: border-box; /* Żeby padding nie rozpychał szerokości */
+}
+
+.add-panel textarea {
+    height: 60px;
+    resize: vertical;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #444;
+}
+
+/* Lista notatek */
+.note-card {
+    border-bottom: 1px solid #ccc; /* Linia oddzielająca */
+    padding: 15px 0;
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+h2 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.note-date {
+    font-size: 0.8em;
+    color: #666;
+}
+
+.note-body {
+    margin: 5px 0 10px 0;
+}
+
+/* Tagi */
+.tag {
+    font-size: 0.8em;
+    background-color: #eee;
+    border: 1px solid #aaa;
+    padding: 2px 6px;
+    margin-right: 5px;
+    border-radius: 3px;
+}
